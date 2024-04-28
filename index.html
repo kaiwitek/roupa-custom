@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peça Custom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Peças Customizadas</h1>
+    </header>
+
+    <main> 
+        <h2>Customize sua peça de roupa</h2>
+
+        <form action="custom.php" autocomplete="off" method="post"> 
+            <p id="tipo">
+                <legend>Escolha seu tipo de peça:</legend>
+                <input type="checkbox" name="camiseta" id="icamiseta">
+                <label for="icamiseta">Camiseta</label>
+                <br>
+                <input type="checkbox" name="jaqueta" id="ijaqueta">
+                <label for="ijaqueta">Jaqueta</label>
+                <br>
+                <input type="checkbox" name="calça" id="icalça">
+                <label for="icalça">Calça </label>
+                <br>
+                <input type="checkbox" name="bermuda" id="ibermuda">
+                <label for="ibermuda">Bermuda</label>
+                <br>
+                <input type="checkbox" name="bone" id="ibone">
+                <label for="ibone">Boné</label>
+                <br>
+                <input type="checkbox" name="touca" id="itouca">
+                <label for="itouca">Touca</label>
+                <br>
+                <input type="checkbox" name="tenis" id="itenis">
+                <label for="itenis">Tênis</label>
+                <br>
+                <input type="checkbox" name="bota" id="ibota">
+                <label for="ibota">Bota</label>
+            </p>
+
+            <p id="c1">
+                <legend>Escolha a cor principal da peça:</legend>
+                <input type="color" name="c1" id="ic1">
+            </p>
+
+            <p id="c2">
+                <legend>Escolha a cor secundária da peça:</legend>
+                <input type="color" name="c2" id="ic2">
+            </p>
+
+            <p>
+                <legend>Coloque até 3 referências para sua peça</legend>
+                <input type="file" name="ref1" id="iref1">
+                <br>
+                <input type="file" name="ref2" id="iref2">
+                <br>
+                <input type="file" name="ref3" id="iref3">
+            </p>
+
+            <p id="obs">
+                <legend>Observações:</legend>
+                <input type="text" name="obs" id="iobs">
+            </p>
+
+            <p id="enviar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>custom pieces by Kai Witek</p>
+    </footer>
+</body>
+</html>
